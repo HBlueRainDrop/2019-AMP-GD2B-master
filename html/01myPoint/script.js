@@ -19,9 +19,9 @@ function animate() {
   points.push(A);
 
   for(let i = 0; i<points.length; i++){
-    points[i].radius+= 0.3;
+    points[i].radius+= 2;
     points[i].draw(context);
-    if(points[i].radius > 150){
+    if(points[i].radius > 900){
       points.splice(i,1);
     }
   }
